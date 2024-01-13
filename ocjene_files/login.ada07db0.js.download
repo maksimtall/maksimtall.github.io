@@ -1,0 +1,3 @@
+if (window.navigator.userAgent.match(/MSIE|Trident/) !== null){
+	window.location.href = "/unsupported_browser";
+}
