@@ -82,7 +82,7 @@
 		});
 
 		$('pass-tip').addEvent(default_event_type, function (ev) {
-			edAlert(_('Ovo je meme KOPIJA e-Dnevnika. Pravi e-Dnevnik: https://e-dnevnik.skole.hr/') + '<br /><br />' + _('Napravio: Maksim Tall'), { style: 'text-align: middle !important;' });
+			edAlert(_('Ovo je meme KOPIJA e-Dnevnika.' <a href="https://e-dnevnik.skole.hr/">Pravi e-Dnevnik</a>) + '<br /><br />' + _('Napravio: Maksim Tall'), { style: 'text-align: middle !important;' });
 		});
 
 		//upozorenje o preniskoj rezoluciji
@@ -92,7 +92,7 @@
 					jquery('#flash-message-container').find('.resolution').remove();
 				}
 			} else if ((window_width <= 767 || window_height <= 500)) {
-				edFlashAlert('error', 'Vaša rezolucija je visa od preporučene te nije podržana');
+				edFlashAlert('error', 'Vaša rezolucija je viša od preporučene te nije podržana');
 			}
 		}
 
